@@ -35,4 +35,11 @@ let saludo = "Hola David!";
 let pregunta = "Como estas?"
 
 let oracion = saludo +" "+ pregunta;
-alert(oracion);
+
+let numero1 = 5;
+let numero2 = 6;
+
+let numeros = ""+numero1+numero2; //Usamos las comillas delante para concatenar numeros sin que se sumen
+
+let frase = `Hola, mi numero es ${numeros}`;
+
