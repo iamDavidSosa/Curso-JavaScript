@@ -43,3 +43,17 @@ let numeros = ""+numero1+numero2; //Usamos las comillas delante para concatenar 
 
 let frase = `Hola, mi numero es ${numeros}`;
 
+//Operadores de comparacion
+
+if(numero1 == numero2){  //Verifica si son iguales
+    //Retorna true si son iguales
+}
+
+if(numero1 != numero2){ //Verifica si son diferentes
+    //Returna true si son diferentes
+}
+
+if(numero1 === numero2){ //Verifica si son estrictamente iguales
+    //Retorna true si son estrictamente iguales y son del mismo tipo de datos
+}
+
