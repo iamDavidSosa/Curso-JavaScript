@@ -76,3 +76,24 @@ if(numero1 >= numero2){ //Verifica numero1 es mayor o igual a numero2
 if(numero1 <= numero2){ //Verifica numero1 es menor o igual a numero2
 
 }
+
+//Operadores logicos
+
+let valor = true;
+let valor2 = false;
+
+let resultado = valor && valor2; //Compara si ambas expresiones son verdaderas, retorna true si se cumple
+
+let resultado2 = valor || valor2; //Compara si una de las expresiones es verdadera, retorna true si se cumple
+
+let resultado3 = !valor; //Cambia el valor de la expresion, si el valor es true, la expresion retorna false
+
+//Camel Case
+
+//Se inician las variables con la primera letra minuscula y cada palabra siguiente se inicia con mayuscula
+
+let inicioDeSesion = true;
+
+let nombreDeUsuario = "David";
+
+let edadUsuario = 18;
