@@ -57,3 +57,22 @@ if(numero1 === numero2){ //Verifica si son estrictamente iguales
     //Retorna true si son estrictamente iguales y son del mismo tipo de datos
 }
 
+if(numero1 !== numero2){ //Verifica si son estrictamente diferentes
+    //Retorna true si son estrictamente diferente
+}
+
+if(numero1 > numero2){ //Verifica si numero1 es mayor a numero2
+
+}
+
+if(numero1 < numero2){ //Verifica si numero1 es menor a numero2
+
+}
+
+if(numero1 >= numero2){ //Verifica numero1 es mayor o igual a numero2
+
+}
+
+if(numero1 <= numero2){ //Verifica numero1 es menor o igual a numero2
+
+}
