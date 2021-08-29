@@ -97,3 +97,16 @@ let inicioDeSesion = true;
 let nombreDeUsuario = "David";
 
 let edadUsuario = 18;
+
+
+//Condicionales
+
+if(inicioDeSesion){
+    alert("Has iniciado sesion");
+}
+else if(!inicioDeSesion){
+    alert("No has iniciado sesion");
+}
+else{
+    alert("Ha ocurrido un error");
+}
