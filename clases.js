@@ -11,15 +11,40 @@ class animal{
     };
 }
 
-const perro = new animal("perro", 4, "negro");
+
 const gato = new animal("gato", 1, "miel");
 const tortuga = new animal("tortuga", 9, "verde");
 
-console.log(perro);
+
+//Herencia
+class Perro extends animal{ //La clase perro hereda todo lo que tiene la clase animal
+    constructor(especie, edad, color, raza){
+        super(especie, edad, color); 
+        this.raza = raza;
+    };
+    static ladrar(){ //La palabra static permite ejecutar el metodo sin haber instanciado la clase
+        document.write("WAW! ");
+    };
+
+    //Metodo set
+    set setRaza(raza_){
+        this.raza = raza_;
+    };
+
+    //Metodo get
+    get getRaza(){
+        return this.raza;
+    };
+}
+const perro = new Perro("perro", 4, "marron", "pastor aleman");
 
 perro.saludar();
+perro.setRaza = "Pitbull"; //Asi se llama un metodo set
+document.write(perro.getRaza+"<br>");
 gato.saludar();
 tortuga.saludar();
+
+
 
 //Abstraccion
 //La abstraccion es resumir un objeto lo mas que se pueda, ejemplo: En vez de poner en la clase
