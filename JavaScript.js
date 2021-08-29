@@ -110,3 +110,19 @@ else if(!inicioDeSesion){
 else{
     alert("Ha ocurrido un error");
 }
+
+//Lista de arreglos
+
+let frutas = ["Manzana","Pera","Mango","Fresa"];
+let i = prompt("Digita un numero: ");
+document.write(frutas[i]);
+
+//Arreglos asociativos
+let pc={
+    nombre: "DavidPC",
+    procesador: "Intel Core i5",
+    ram: "8GB",
+    espacio: "340GB"
+};
+
+document.write(pc["nombre"]);
