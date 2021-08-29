@@ -13,7 +13,7 @@ const pi = 3.141592653589; //La palabra const declara una constante
 let nombre = prompt("Ingresa tu nombre: ");
 alert("Bienvenido, "+nombre);
 
-document.write(nombre);
+document.write("<br>"+nombre+"</br>");
 
 //Operadores de asignacion
 
@@ -115,7 +115,7 @@ else{
 
 let frutas = ["Manzana","Pera","Mango","Fresa"];
 let i = prompt("Digita un numero: ");
-document.write(frutas[i]);
+//document.write(frutas[i]);
 
 //Arreglos asociativos
 let pc={
@@ -125,7 +125,7 @@ let pc={
     espacio: "340GB"
 };
 
-document.write(pc["nombre"]);
+//document.write(pc["nombre"]);
 
 //Bucles
 
@@ -133,12 +133,12 @@ let numeroParaSumar=0;
 
 while(numeroParaSumar!=10){  //Bucle while
     numeroParaSumar++;
-    document.write("<br>" + numeroParaSumar);
+    //document.write("<br>" + numeroParaSumar);
 };
 
 do{  //Bucle do while
     numeroParaSumar++;
-    document.write("<br>" + numeroParaSumar);
+    //document.write("<br>" + numeroParaSumar);
 }while(numeroParaSumar!=20);
 
 //Break en un bucle
@@ -149,12 +149,12 @@ while(true){
     };
     numeroParaSumar++;
 }
-document.write("<br>" + numeroParaSumar);
+//document.write("<br>" + numeroParaSumar);
 
 //Bucle for
 
 for(let i=0; i<10; i++){
-    document.write("<br><br>" + i);
+    //document.write("<br><br>" + i);
 };
 
 //Continue en un bucle
@@ -164,7 +164,7 @@ for(let i=0; i<11;i++){
         continue; //Sirve para romper el bucle en esa vuelta y continuar en la siguiente
     };
 
-    document.write("<br>"+i);
+    //document.write("<br>"+i);
 };
 
 //Bucle for in
@@ -192,3 +192,19 @@ for(let i =0; i<5;i++){
         };
     };
 };
+
+//Funciones
+
+function saludar(){ //Creamos la funcion
+    alert("Hola, te estoy saludando");
+};
+
+saludar(); //Llamamos a la funcion
+
+function sumar(a, b){
+    let c = a + b;
+    return c;
+};
+
+let resultadoSuma = sumar(10, 20);
+document.write("<br>"+resultadoSuma);
