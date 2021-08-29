@@ -126,3 +126,69 @@ let pc={
 };
 
 document.write(pc["nombre"]);
+
+//Bucles
+
+let numeroParaSumar=0;
+
+while(numeroParaSumar!=10){  //Bucle while
+    numeroParaSumar++;
+    document.write("<br>" + numeroParaSumar);
+};
+
+do{  //Bucle do while
+    numeroParaSumar++;
+    document.write("<br>" + numeroParaSumar);
+}while(numeroParaSumar!=20);
+
+//Break en un bucle
+
+while(true){
+    if(numeroParaSumar==30){
+        break;
+    };
+    numeroParaSumar++;
+}
+document.write("<br>" + numeroParaSumar);
+
+//Bucle for
+
+for(let i=0; i<10; i++){
+    document.write("<br><br>" + i);
+};
+
+//Continue en un bucle
+
+for(let i=0; i<11;i++){
+    if(i==4){
+        continue; //Sirve para romper el bucle en esa vuelta y continuar en la siguiente
+    };
+
+    document.write("<br>"+i);
+};
+
+//Bucle for in
+
+let animales = ["Perro", "Gato", "Tortuga"];
+document.write("<br>");
+for(let animal in animales){ //La variable animal toma como valor el indice del arreglo
+    document.write("<br>"+animal);
+};
+
+//Bucle for of
+
+for(let animal of animales){ //La variable animal toma como valor el contenido del arreglo
+    document.write("<br>"+animal);
+};
+
+
+//Label en Bucles
+
+forRueda: //Asi se declara el label del bucle
+for(let i =0; i<5;i++){
+    for(let j = 0; j < 5; j++){
+        if(i==4 && j==4){
+            break forRueda; //Eso rompe el bucle grande
+        };
+    };
+};
