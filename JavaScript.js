@@ -13,7 +13,7 @@ const pi = 3.141592653589; //La palabra const declara una constante
 let nombre = prompt("Ingresa tu nombre: ");
 alert("Bienvenido, "+nombre);
 
-document.write("<br>"+nombre+"</br>");
+//document.write("<br>"+nombre+"</br>");
 
 //Operadores de asignacion
 
@@ -114,7 +114,7 @@ else{
 //Lista de arreglos
 
 let frutas = ["Manzana","Pera","Mango","Fresa"];
-let i = prompt("Digita un numero: ");
+//let i = prompt("Digita un numero: ");
 //document.write(frutas[i]);
 
 //Arreglos asociativos
@@ -172,13 +172,13 @@ for(let i=0; i<11;i++){
 let animales = ["Perro", "Gato", "Tortuga"];
 document.write("<br>");
 for(let animal in animales){ //La variable animal toma como valor el indice del arreglo
-    document.write("<br>"+animal);
+    //document.write("<br>"+animal);
 };
 
 //Bucle for of
 
 for(let animal of animales){ //La variable animal toma como valor el contenido del arreglo
-    document.write("<br>"+animal);
+    //document.write("<br>"+animal);
 };
 
 
@@ -196,7 +196,7 @@ for(let i =0; i<5;i++){
 //Funciones
 
 function saludar(){ //Creamos la funcion
-    alert("Hola, te estoy saludando");
+    //alert("Hola, te estoy saludando");
 };
 
 saludar(); //Llamamos a la funcion
@@ -207,4 +207,36 @@ function sumar(a, b){
 };
 
 let resultadoSuma = sumar(10, 20);
-document.write("<br>"+resultadoSuma);
+//document.write("<br>"+resultadoSuma);
+
+//Ejercicio
+
+let cantidadAlumnos = parseInt(prompt("Ingrese la cantidad de alumnos"));
+let alumnosTotales = [];
+
+for(let i=0; i<cantidadAlumnos; i++){
+    alumnosTotales[i]=[prompt("Nombre del alumno: "+(i+1)), 0];
+}
+
+function tomarAsistencia(nombre, p){
+    let presencia = prompt(nombre);
+    if(presencia=="p" || presencia=="P"){
+        alumnosTotales[p][1]++;
+    }
+};
+
+for(let i=0; i<10; i++){
+    for(alumno in alumnosTotales){
+        tomarAsistencia(alumnosTotales[alumno][0], alumno);
+    };
+}
+
+for(alumno in alumnosTotales){
+    let resultadoTotal = `<br><br> ${alumnosTotales[alumno][0]}: <br>
+    _________Presencia: ${alumnosTotales[alumno][1]} <br>
+    _________Ausencia: ${10 - alumnosTotales[alumno][1]} `;
+    if(10 - alumnosTotales[alumno][1] > 3){
+        resultadoTotal+="<b style='color:red'>REPROBADO</b><br><br>";
+    };
+    document.write(resultadoTotal);
+};
