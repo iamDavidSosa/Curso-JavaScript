@@ -11,10 +11,8 @@ class animal{
     };
 }
 
-
 const gato = new animal("gato", 1, "miel");
 const tortuga = new animal("tortuga", 9, "verde");
-
 
 //Herencia
 class Perro extends animal{ //La clase perro hereda todo lo que tiene la clase animal
