@@ -39,5 +39,40 @@ resultado = cadena2.trimStart(); //Elimina los espacios en blanco del inicio de 
 
 
 //Metodos de arrays
+        
+        //Metodos transformadores (Los que modifican directamente al array)
 
 let lista = ["David", "Ana Luisa", "Daniel"];
+
+document.write(lista+"<br>");
+
+let resultadoLista = lista.pop();  //Elimina el ultimo valor del array y lo retorna
+
+resultadoLista = lista.shift(); //Elimina el primer valor del array y lo retorna
+
+resultadoLista = lista.push("Sindi"); //Agrega uno o mas elementos al final del array y 
+//retorna la cantidad de elementos
+
+resultadoLista = lista.reverse(); //Invierte el orden de los elementos del array
+
+resultadoLista = lista.unshift("Anderson"); //Agrega uno o mas elementos al inicio del array
+//y retorna la nueva longitud
+
+resultadoLista = lista.sort(); //Ordena el array en orden de alfabetico, numerico o de diccionario
+
+resultadoLista = lista.splice(0,1); //El primer valor indica desde donde se comenzara a eliminar
+//y el segundo valor indica la cantidad de elementos que se van a eliminar
+
+
+        //Metodos Accesores
+
+resultadoLista = lista.join(" "); //Convierte el array a una cadena de texto, el parametro que se toma
+//separa los elementos del array cuando pasan al texto
+
+resultadoLista = lista.slice(0, 1); //Devuelve una parte del array desde el parametro inicial hasta el
+//final sin incluir el final
+
+resultadoLista = lista.filter(numero => numero.length > 5); //Crea un nuevo array con los elementos que cumplan una condicion
+
+
+document.write(resultadoLista);
