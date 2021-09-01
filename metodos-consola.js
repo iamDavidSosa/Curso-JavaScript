@@ -34,3 +34,4 @@ console.groupCollapsed("Registro"); //Crea un grupo igual que .group, pero no lo
 
 console.time(); //Inicia un temporizador
 
+console.timeLog(); 
