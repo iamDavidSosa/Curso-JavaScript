@@ -1,5 +1,6 @@
-* {
-    background-color: rgb(240, 218, 171);
+body {
+    color: #222;
+    font-family: sans-serif;
 }
 
 h1{
