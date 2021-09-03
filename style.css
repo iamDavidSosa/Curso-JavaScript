@@ -6,3 +6,7 @@ body {
 h1{
     color: rgb(90, 90, 90);
 }
+
+.grande{
+    font-size: 40px;
+}
