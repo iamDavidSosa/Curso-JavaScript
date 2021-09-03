@@ -67,3 +67,51 @@ for(i = 0; i<10;i++){
 contenedor.appendChild(fragmento);
 document.write(fragmento);
 console.log(fragmento);
+
+        // Modificacion y obtencion de childs //
+
+const primerHijo = contenedor.firstElementChild; //Selecciona el primer elemento hijo
+
+const hijos = contenedor.childNodes; //Devuelve todos los nodos hijos
+
+const nodosHijos = contenedor.children; //Devuelve todos los nodos que sean etiquetas html
+
+console.log(nodosHijos);
+
+
+        // Metodos de los childs //
+
+const parrafo = document.createElement("P").innerHTML = "Parrafo";
+
+const h2_nuevo = document.createElement("H2");
+h2_nuevo.innerHTML = "Titulo";
+
+const h2_antiguo = document.querySelector(".h2");
+
+contenedor.replaceChild(h2_nuevo, h2_antiguo); //Reemplazamos un elemento hijo por otro
+
+contenedor.removeChild(h2_nuevo); //Elimina un elemento hijo
+
+let respuesta = contenedor.hasChildNodes(); //Retorna true si el elemento principal tiene hijos
+
+if(respuesta){
+        document.write("El elemento tiene hijos");
+}else{
+        document.write("El elemento no tiene hijos");
+}
+
+
+        // Metodos de parents //
+
+let elementoPadre = contenedor.parentElement; //Devuelve el elemento padre de ese elemento
+
+alert(elementoPadre);
+
+
+
+        // Metodos de siblings (hermanos) //
+
+let h4 = document.querySelector(".h4");
+let hermanoSiguiente = h4.nextElementSibling; //Toma el elemento hermano siguiente
+let hermanoAnterior = h4.previousElementSibling; //Toma el elemento hermano anterior
+console.log();
