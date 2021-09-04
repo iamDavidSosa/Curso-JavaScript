@@ -1,0 +1,33 @@
+.flex-container{
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  
+}
+
+.flex-item{
+    flex-grow: 1;
+    flex-basis: 100px;
+    margin: 20px;
+    border: 2px solid #333;
+    padding: 10px;
+    max-width: 125px;
+}
+
+.flex-item:hover{
+    border-color: #07b94b;
+    box-shadow: 0px 0px 10px #679b74;
+}
+
+.flex-item:focus{
+    border-color: #07b94b;
+    box-shadow: 0px 0px 10px #679b74;
+}
+h3 {
+    color: #7c7b7b;
+}
+
+p b{
+    color: #07b94b;
+}
